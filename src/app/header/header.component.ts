@@ -17,7 +17,7 @@ export class HeaderComponent {
   ngOnInit(): void {
     
     this.scrollSubscription = this.scrollService.getScroll().subscribe(scrollPosition => {
-      this.isScrolled = scrollPosition > 100;
+      this.isScrolled = scrollPosition > 0;
     })
 
     
@@ -25,3 +25,4 @@ export class HeaderComponent {
   }
 
 }
+  
