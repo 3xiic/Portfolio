@@ -1,0 +1,243 @@
+h2 {
+    color: #333;
+  }
+  .inputbox {
+    position: relative;
+    width: 196px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 1.6vw 1vw 0.5vw;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 2vw 1vw 1vw;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~ span,
+  .inputbox input:focus ~ span {
+    color: #ffffff;
+    transform: translateX(-0.5vw) translateY(-0.8vw); 
+    font-size: 0.75em; 
+  }
+  
+  .inputbox span {
+    padding: 0vw 0vw 1vw; 
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 12vw;
+    height: 0.1vw;
+    background: #ffffff;
+    border-radius: 0.1vw;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 2.5vw;
+  }
+  
+  button {
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+  }
+  
+  button:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 0.1vw;
+    margin-right: 1vw;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+  }
+  
+  button:hover:before {
+    background-color: #fff;
+    width: 3rem;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100vw ;
+    height: 60vw;
+    background: rgba(0, 0, 0, 0.85); 
+    z-index: 0; 
+  }
+  .overlay-2 {
+    position: absolute;
+    width: 50vw ;
+    height: 31vw;
+    left: 24vw;
+    top: 215vw;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+  }
+  .overlay-3 {
+    position: absolute;
+    width: 80vw ;
+    height: 15vw;
+    left: 9vw;
+    top: 250vw;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+  }
+  .img {
+    height: 60vw;
+    width: 100vw;
+    top: 215;
+    left: 0;
+    z-index: -1;
+  }
+  .title{
+    position: absolute;
+    color: white;
+    font-size: 5vw;
+    top: 220vw;
+    left: 28vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .ip{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 227vw;
+    left: 42vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .submask{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 232vw;
+    left: 42vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .btn-calculate{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 239vw;
+    left: 43vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .title-result{
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    top: 251vw;
+    left: 44vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .results-1{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 254vw;
+    left: 15vw;
+    z-index: 3;
+  }
+  .results-2{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 256vw;
+    left: 40vw;
+    z-index: 3;
+  }
+  
+  .binary-title {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 258vw;
+    left: 45vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  
+  .binary-res {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 259vw;
+    left: 40vw;
+    z-index: 3;
+  }
+  
+  .red-title {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 259vw;
+    left: 20vw;
+    font-weight: bold;
+    z-index: 3;
+  }
+  
+  .red-res {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 261vw;
+    left: 20vw;
+    z-index: 3;
+  }
+  
+  .host-title {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 259vw;
+    left: 66vw;
+    font-weight: bold;
+    z-index: 3;
+  } 
+  .host-res {
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    top: 261vw;
+    left: 66vw;
+    z-index: 3;
+  }

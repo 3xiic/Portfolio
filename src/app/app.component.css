@@ -3,3 +3,13 @@
     margin: 20px auto;
     border-bottom: 1px solid black;
   }
+  .calculator{
+    top: 50%;
+  }
+  .tic {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    height: 100%; 
+}
