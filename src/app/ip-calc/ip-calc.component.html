@@ -1,21 +1,22 @@
 <section id="calc" class="py-2">
 <div class="overlay"></div>
-<div class="overlay-2"></div>
-<img class="img" src="/images/fondo.jpg" alt="">
-    <h2 class="title">Calculadora de IP</h2>
-    <div class="inputbox ip" >
-      <input [(ngModel)]="ip" placeholder="Ej: 192.168.1.0" required="required"  />
-      <span>IP: </span>
+<div class="overlay-2">
+  <h2 class="title">Calculadora de IP</h2>
+  <div class="inputbox ip" >
+    <input [(ngModel)]="ip" placeholder="Ej: 192.168.1.0" required="required"  />
+    <span>IP: </span>
+    <i></i>
+  </div>
+  <div class="inputbox submask" >
+      <input [(ngModel)]="mask" placeholder="Ej: 255.255.255.0" required="required"  />
+      <span>Mascara de red: </span>
       <i></i>
     </div>
-    <div class="inputbox submask" >
-        <input [(ngModel)]="mask" placeholder="Ej: 255.255.255.0" required="required"  />
-        <span>Mascara de red: </span>
-        <i></i>
-      </div>
-  
-    <button class="btn-calculate" (click)="calculateIpData()">Calcular</button>
-  
+
+  <button class="btn-calculate" (click)="calculateIpData()">Calcular</button>
+
+</div>
+<img class="img" src="/images/fondo.jpg" alt="">
     <div *ngIf="networkIp">
     <div class="overlay-3"></div>
       <h3 class="title-result">Resultados</h3>
