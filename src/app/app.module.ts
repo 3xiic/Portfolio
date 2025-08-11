@@ -12,7 +12,6 @@ import { MadeprojectsComponent } from './madeprojects/madeprojects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FondoComponent } from './fondo/fondo.component';
 import { IpService } from './ip.service';
-import { IpCalcComponent } from './ip-calc/ip-calc.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { IpCalcComponent } from './ip-calc/ip-calc.component';
     FooterComponent,
     SkillsComponent,
     AboutComponent,
-    IpCalcComponent,
     MadeprojectsComponent,
     ExperienceComponent,
     FondoComponent
