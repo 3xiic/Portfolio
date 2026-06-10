@@ -1,48 +1,35 @@
 <section id="about" class="py-2">
     <div class="container">
       <section class="my-5 about-section">
-        <h2 class="h1-responsive font-weight-bold text-center my-5">About me</h2>
+        <h2 class="h1-responsive font-weight-bold text-center my-5">{{ t.about.title }}</h2>
         <p class="lead grey-text text-center w-responsive mx-auto mb-5 description">
-          I'm a computer science student at Universidad el Bosque, I'm a competitive 
-          programmer, front-end and back-end developer.
+          {{ t.about.lead }}
         </p>
         <div class="row">
           <div class="col-md-6 text-left">
-            <h4>Introduction</h4>
-            <p>Web developer and competitive programmer with solid experience in both back-end and
-              front-end development. Specialized in frameworks such as Spring Boot, Django, Angular,
-              and JSF. Advanced proficiency in programming languages, mainly Java and Python, and
-              efficient management of databases (MySQL, MongoDB, Oracle, PostgreSQL). Recognized
-              in programming competitions for excellent results. Skilled in problem-solving, process
-              optimization, and maintaining a positive attitude.</p>
-            
-            <h4>Personal information</h4>
-            <li> <strong>Name:</strong>  Jaime Esteban Mejia Arevalo</li>
-            <li> <strong>Username:</strong>  Exiic</li>
-            <li> <strong>Place of Birth: </strong>Bogotá, Colombia</li>
-            <li> <strong> Marital Status: </strong> Single</li>
-            <li> <strong>Contact: </strong>  <a mdbRipple class="btn btn-outline-dark btn-floating m-1" href="mailto:estebanm3j@gmail.com" role="button"
-              ><i class="bi bi-google"></i></a>
-      
-            <a mdbRipple class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/estm3j/" role="button"
-              ><i class="bi bi-linkedin"></i></a>
-      
-            <a mdbRipple class="btn btn-outline-dark btn-floating m-1" href="https://github.com/3xiic" role="button"
-              ><i class="bi bi-github"></i></a></li>
-           
-             
-            
-            <h4>Currently learning</h4>
-            <p>Lately, I have been learning <strong>Kotlin, Django,</strong> and <strong>React.js</strong> to expand my knowledge in this fascinating world of programming.</p>
-            
-            <h4>Hobbies</h4>
-            <p>In my free time, I primarily focus on playing games or developing personal projects. I have a deep passion for music and enjoy it as an integral part of my daily life.</p>
+            <h4>{{ t.about.introTitle }}</h4>
+            <p [innerHTML]="t.about.intro"></p>
+
+            <h4>{{ t.about.infoTitle }}</h4>
+            <li><strong>{{ t.about.nameLabel }}:</strong> Jaime Esteban Mejia Arevalo</li>
+            <li><strong>{{ t.about.usernameLabel }}:</strong> Exiic</li>
+            <li><strong>{{ t.about.birthLabel }}:</strong> Bogotá, Colombia</li>
+            <li><strong>{{ t.about.contactLabel }}:</strong>
+              <a class="btn btn-outline-dark btn-floating m-1" href="mailto:estebanm3j@gmail.com" role="button"><i class="bi bi-google"></i></a>
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/estm3j/" role="button"><i class="bi bi-linkedin"></i></a>
+              <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/3xiic" role="button"><i class="bi bi-github"></i></a>
+            </li>
+
+            <h4>{{ t.about.learningTitle }}</h4>
+            <p [innerHTML]="t.about.learning"></p>
+
+            <h4>{{ t.about.outsideTitle }}</h4>
+            <p>{{ t.about.outside }}</p>
           </div>
           <div class="col-md-6 image">
-            <img  src="/images/YoYPanas.jpg" alt="About Me Image" class="img-fluid rounded">
+            <img src="/images/YoYPanas.jpg" alt="About Me Image" class="img-fluid rounded">
           </div>
         </div>
       </section>
     </div>
   </section>
-  

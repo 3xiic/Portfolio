@@ -1,16 +1,19 @@
 <div class="view">
     <div class="overlay"></div>
-    <img class="img-intro" src="/images/fondo.png" alt="">
+    <img class="img-intro" src="/images/fondo.png" alt="" aria-hidden="true">
+    <img class="hero-photo" src="/images/yo.jpg" alt="Esteban Mejía">
     <div class="content">
-        
-        <h3 class="name" >Esteban Mejia
-        </h3>
+
+        <h1 class="name">Esteban Mejía</h1>
         <div class="text-animate">
-            <span class="text first-text">I'm a </span>
-            <span class="text sec-text">{{ currentText }}</span>
+            <span class="first-text">{{ t.hero.prefix }}</span><span class="sec-text">{{ displayText }}<span class="cursor" aria-hidden="true">|</span></span>
         </div>
-        <div >
-            <img class="logo" src="/images/logo.png" alt="">
+        <div class="hero-ctas mt-4">
+            <a href="#projects" class="btn btn-hero-primary me-3">{{ t.hero.ctaProjects }}</a>
+            <a href="#Contact" class="btn btn-hero-outline">{{ t.hero.ctaContact }}</a>
+        </div>
+        <div>
+            <img class="logo" src="/images/logo.png" alt="" aria-hidden="true">
         </div>
 
     </div>

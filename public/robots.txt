@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exiic.netlify.app/sitemap.xml

@@ -1,6 +1,9 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark " [class.bg-fondo]="isScrolled" [class.shadow]="isScrolled">
   <div class="container">
-    <a class="navbar-brand" href="#">🟡🔵🔴 Esteban Mejia</a>
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img class="logo" src="/images/logow.png" alt="Esteban Mejía logo">
+      Esteban Mejía
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,27 +18,26 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="mx-auto"></div>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav align-items-center">
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Home</a>
+          <a class="nav-link text-white" href="#">{{ t.nav.home }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#about">About me</a>
+          <a class="nav-link text-white" href="#about">{{ t.nav.about }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#myskills">My Skills</a>
+          <a class="nav-link text-white" href="#experience">{{ t.nav.experience }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#projects">My Projects</a>
+          <a class="nav-link text-white" href="#projects">{{ t.nav.projects }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#experience">Experience</a>
+          <a class="nav-link text-white" href="#Contact">{{ t.nav.contact }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#Contact">Contact me</a>
-        </li>
-        <li class="nav-item">
-          <img class="logo" src="/images/logow.png" alt="">
+        <li class="nav-item ms-2">
+          <button class="btn btn-lang" (click)="toggleLang()" [attr.aria-label]="'Switch to ' + (currentLang === 'en' ? 'Spanish' : 'English')">
+            {{ currentLang === 'en' ? 'ES' : 'EN' }}
+          </button>
         </li>
       </ul>
     </div>

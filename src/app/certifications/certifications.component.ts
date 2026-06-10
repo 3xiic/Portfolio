@@ -3,10 +3,11 @@ import { LanguageService } from '../language.service';
 import { Translations } from '../translations';
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html'
+  selector: 'app-certifications',
+  templateUrl: './certifications.component.html',
+  styleUrl: './certifications.component.css'
 })
-export class SkillsComponent implements OnInit {
+export class CertificationsComponent implements OnInit {
   t!: Translations;
 
   constructor(private langService: LanguageService) {

@@ -3,10 +3,11 @@ import { LanguageService } from '../language.service';
 import { Translations } from '../translations';
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html'
+  selector: 'app-lifeguard',
+  templateUrl: './lifeguard.component.html',
+  styleUrl: './lifeguard.component.css'
 })
-export class SkillsComponent implements OnInit {
+export class LifeguardComponent implements OnInit {
   t!: Translations;
 
   constructor(private langService: LanguageService) {

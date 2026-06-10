@@ -9,6 +9,23 @@
     background-color: #F73859;
 }
 .logo{
-    margin-top: 22%;
-   width: 50px;
+    width: 50px;
+}
+
+.btn-lang {
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.7);
+    background: transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.btn-lang:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: #fff;
 }

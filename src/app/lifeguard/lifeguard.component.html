@@ -1,0 +1,67 @@
+<section id="lifeguard" class="py-5 lifeguard-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-md-6 order-2 order-md-1">
+        <div class="lifeguard-badge mb-3">
+          <span class="badge-merit">{{ t.lifeguard.badge }}</span>
+        </div>
+        <h2 class="lifeguard-title">LifeGuardAPP</h2>
+        <p class="lifeguard-sub">{{ t.lifeguard.timeline }}</p>
+
+        <p class="lifeguard-desc" [innerHTML]="t.lifeguard.desc"></p>
+
+        <div class="tech-badges mb-4">
+          <img src="https://img.shields.io/badge/Flutter-blue?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
+          <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=Dart&logoColor=white" alt="Dart">
+          <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=Spring-Boot&logoColor=white" alt="Spring Boot">
+          <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+          <img src="https://img.shields.io/badge/P2P-555?style=for-the-badge" alt="P2P">
+          <img src="https://img.shields.io/badge/Geolocation-2e7d32?style=for-the-badge" alt="Geolocation">
+        </div>
+
+        <a class="btn btn-lifeguard" href="https://github.com/3xiic/LifeGuardAPP" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github me-2"></i>{{ t.lifeguard.cta }}
+        </a>
+      </div>
+
+      <div class="col-md-6 order-1 order-md-2 d-flex justify-content-center">
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div id="carouselLifeGuard" class="carousel slide h-100" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img src="/images/image (1).png" class="d-block w-100 h-100" alt="LifeGuardAPP" style="object-fit:cover;">
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="/images/6 (1).jpg" class="d-block w-100 h-100" alt="LifeGuardAPP mapa de geolocalización" style="object-fit:cover;" loading="lazy">
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="/images/13 (1).jpg" class="d-block w-100 h-100" alt="LifeGuardAPP pantalla de comunicación" style="object-fit:cover;" loading="lazy">
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="/images/16 (1).jpg" class="d-block w-100 h-100" alt="LifeGuardAPP pantalla de emergencia" style="object-fit:cover;" loading="lazy">
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="/images/1 (1).jpg" class="d-block w-100 h-100" alt="LifeGuardAPP pantalla de inicio" style="object-fit:cover;" loading="lazy">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLifeGuard" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselLifeGuard" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="phone-home-bar"></div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

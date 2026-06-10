@@ -11,7 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { MadeprojectsComponent } from './madeprojects/madeprojects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FondoComponent } from './fondo/fondo.component';
+import { CertificationsComponent } from './certifications/certifications.component';
+import { LifeguardComponent } from './lifeguard/lifeguard.component';
 import { IpService } from './ip.service';
+import { LanguageService } from './language.service';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,16 @@ import { IpService } from './ip.service';
     AboutComponent,
     MadeprojectsComponent,
     ExperienceComponent,
-    FondoComponent
+    FondoComponent,
+    CertificationsComponent,
+    LifeguardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule
   ],
-  providers: [IpService ],
+  providers: [IpService, LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
