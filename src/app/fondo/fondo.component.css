@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 767px) {
+    .view {
+        min-height: auto;
+    }
+
     .hero-photo {
         display: block;
         width: 65%;

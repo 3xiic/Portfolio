@@ -13,7 +13,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FondoComponent } from './fondo/fondo.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { LifeguardComponent } from './lifeguard/lifeguard.component';
-import { IpService } from './ip.service';
 import { LanguageService } from './language.service';
 
 @NgModule({
@@ -34,7 +33,7 @@ import { LanguageService } from './language.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [IpService, LanguageService],
+  providers: [LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
